@@ -1,0 +1,11 @@
+1. Scan infrastructure as code templates:
+Use a tool like AWS Config to scan the infrastructure code
+### Example vulnerability: Security groups with overly permissive inbound or outbound rules, such as allowing unrestricted access to sensitive ports or protocols.
+
+2. Scan AMI’s or containers for OS vulnerabilities
+Use a tool like AWS CodeArtifact, AWS ECR to scan AMIs or container images for vulnerabilities and security issues.
+### Example vulnerability: Outdated operating system package
+
+3. Scan an AWS environment for cloud configuration vulnerabilities
+Use a tool like AWS Security Hub, AWS Config Rules to continuously monitor and scan the deployed environment
+### Example vulnerability: S3 buckets should have server-side encryption enabled, should prohibit public read/write access

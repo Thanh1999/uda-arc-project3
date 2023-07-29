@@ -1,0 +1,9 @@
+Describe GuardDuty findings that were detected related to the brute force attack
+- UnauthorizedAccess:EC2/SSHBruteForce
+Message: i-0a3cc2d9275a8a3ec is performing SSH brute force attacks against 10.192.10.109. Brute force attacks are used to gain unauthorized access to your instance by guessing the SSH password
+
+Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+- GuardDuty may have detected this attack by analyzing the network traffic and access patterns within the AWS environment:
++ Network Traffic Analysis: GuardDuty monitors network traffic logs, such as VPC Flow Logs, to identify any unusual or suspicious patterns
++ Anomaly Detection: GuardDuty uses machine learning algorithms to establish a baseline of normal behavior for your AWS resources
++ Threat Intelligence Integration: GuardDuty integrates with various threat intelligence sources, such as known malicious IP address lists and botnet activity databases

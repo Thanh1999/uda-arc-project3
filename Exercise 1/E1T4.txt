@@ -1,0 +1,5 @@
+2 obvious poor practices relates to security:
+
+- The web application is deployed in a public subnet instead of a private subnet. When depliy in public subnet it can be accessed directly through internet, increase risk and attack surface.
+
+- The web application instance has access to the secret recipe S3 bucket while it does not need access to that bucket. That is viloate least privilege rule the web application instance should only have access to the necessary resourcse to prevents unauthorized access or malicious insider threats.
